@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import pages.LoginPage;
 import pages.DashboardPage;
 
-public class DashboardTest {
+public class DashboardTest extends BaseTest {
     private WebDriver driver;
     private DashboardPage dashboardPage;
 

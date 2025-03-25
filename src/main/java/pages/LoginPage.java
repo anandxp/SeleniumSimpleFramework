@@ -7,6 +7,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage {
 
+    public LoginPage(WebDriver driver) {
+        super(driver);
+    }
+
     @FindBy(id = "username")
     private WebElement usernameField;
 
@@ -15,10 +19,6 @@ public class LoginPage extends BasePage {
 
     @FindBy(id = "loginBtn")
     private WebElement loginButton;
-
-    public LoginPage(WebDriver driver) {
-        super(driver);
-    }
 
     public void enterUsername(String username) {
         usernameField.sendKeys(username);
